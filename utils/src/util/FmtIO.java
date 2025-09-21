@@ -1,6 +1,10 @@
-import java.util.Scanner;
+package util;
 
-class FmtIO {
+import java.util.Scanner;
+import java.io.OutputStream;
+import java.io.IOException;
+
+public class FmtIO {
     
     private static String _prompt = "> ";
     private static boolean scan_line = true;
@@ -18,17 +22,31 @@ class FmtIO {
 
     public static void setScanLine(boolean b) {scan_line = b;}
     
-    public static void print(String... strs) {
+    public static void print(OutputStream out, String... strs) throws IOException{
         if(strs == null || strs.length == 0) return;
-        System.out.print(strs[0]);
+        out.write(strs[0].getBytes());
         for(int i=1; i<strs.length; ++i) {
-            System.out.print(strs[i]+" ");
+            out.write((" " + strs[i]).getBytes());
         }
     }
 
-    public static void println(String... strs) {
+    public static void print(String... strs) {
+        try {print(System.out, strs);} catch(IOException e) {}
+    }
+    
+    public static void err(String... strs) {
+        try {print(System.err, strs);} catch(IOException e) {}
+    }
+
+    public static void println(OutputStream out, String... strs) throws IOException {
         if(strs == null || strs.length == 0) return;
-        for(var s : strs) {System.out.print(s+"\n");} 
+        for(var s : strs) {
+            out.write((s + "\n").getBytes());
+        } 
+    }
+
+    public static void println(String... strs) {
+        try {println(System.out, strs);} catch(IOException e) {}
     }
 
     public static int getInt() {

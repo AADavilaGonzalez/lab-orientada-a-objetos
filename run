@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+proyecto="$1"
+if [[ -z "$proyecto" ]]; then
+    echo "Uso: $0 <nombre_del_proyecto>"
+    exit 1
+fi
+
+ejecutable="./$proyecto/build/install/$proyecto/bin/$proyecto"
+
+if [[ ! -f "$ejecutable" ]]; then
+    ./gradlew ":$proyecto:installDist" || exit 1
+fi
+
+if [[ -f $ejecutable ]]; then
+    exec "$ejecutable"
+else
+    echo "No se ha creado el archivo en la ubicacion esperada: $proyecto"
+    exit 1    
+fi

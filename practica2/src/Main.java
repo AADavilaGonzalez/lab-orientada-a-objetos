@@ -1,10 +1,13 @@
+
 import java.util.function.Function;
 
-class App {
+import util.FmtIO;
+
+class Main {
     
     private Universidad4122 uni;
 
-    public App(boolean auto) {
+    public Main(boolean auto) {
         uni = new Universidad4122();
         if(!auto) return;
         uni.agregarEstudiante(
@@ -33,7 +36,7 @@ class App {
         );
     }
 
-    public App() {this(true);}
+    public Main() {this(true);}
 
     private void agregarEstudiante() {
         FmtIO.clear();
@@ -81,7 +84,7 @@ class App {
             case 3  -> e->e.carrera;
             case 4  -> e->e.semestreActual;
             case 5  -> e->e.edad;
-            default -> _->null;
+            default -> e->null;
         };
 
         var lista = uni.buscarEstudiantes(val, f);
@@ -127,5 +130,5 @@ class App {
         }
     }
 
-    public static void main(String[] args) {new App().run();}
+    public static void main(String[] args) {new Main().run();}
 }
