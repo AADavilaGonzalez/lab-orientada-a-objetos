@@ -6,6 +6,13 @@ if [[ -z "$proyecto" ]]; then
     exit 1
 fi
 
+proyectos="proyecto1 proyecto2"
+if [[ ! " $proyectos " =~ $proyecto ]]; then
+    echo "No se puede ejecutar $proyecto como aplicacion interactiva"
+    echo "Opciones: $proyectos"
+    exit 1
+fi
+
 ejecutable="./$proyecto/build/install/$proyecto/bin/$proyecto"
 
 if [[ ! -f "$ejecutable" ]]; then

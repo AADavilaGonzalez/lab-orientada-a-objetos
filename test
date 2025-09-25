@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+proyecto="$1"
+if [[ -z "$proyecto" ]]; then
+    echo "Uso: $0 <nombre_del_proyecto>"
+    exit 1
+fi
+
+proyectos="practica3"
+if [[ ! " $proyectos " =~ $proyecto ]]; then
+    echo "No se puede ejecutar $proyecto como batch de pruebas"
+    echo "Opciones: $proyectos"
+    exit 1
+fi
+
+./gradlew ":$proyecto:test" --rerun-tasks

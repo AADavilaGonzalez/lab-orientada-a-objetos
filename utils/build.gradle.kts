@@ -1,7 +1,5 @@
-java {
-    sourceSets {
-        named("main") {
-            java.srcDirs("src")
-        }
+sourceSets {
+    main {
+        java { setSrcDirs(listOf("src")) }
     }
 }
