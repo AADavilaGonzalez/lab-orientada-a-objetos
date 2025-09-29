@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.io.OutputStream;
 import java.io.IOException;
 
-public class FmtIO {
+public final class FmtIO {
     
     private static String _prompt = "> ";
     private static boolean scan_line = true;

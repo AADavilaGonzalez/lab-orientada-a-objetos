@@ -6,7 +6,7 @@ if [[ -z "$proyecto" ]]; then
     exit 1
 fi
 
-proyectos="practica3"
+proyectos="practica3 practica4"
 if [[ ! " $proyectos " =~ $proyecto ]]; then
     echo "No se puede ejecutar $proyecto como batch de pruebas"
     echo "Opciones: $proyectos"

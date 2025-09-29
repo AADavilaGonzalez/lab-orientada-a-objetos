@@ -5,31 +5,9 @@ import java.util.ArrayList;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
+import static util.ArgCheck.*;
+
 class ClienteDavila {
-
-    private static IllegalArgumentException argInv(String msg) {
-       return new IllegalArgumentException(msg); 
-    }
-
-    private static String atribStrNoNulo(String s, String atrib) {
-        if(s == null) {
-            throw argInv(
-                String.format("El atributo %s no puede ser nulo", atrib)
-            );
-        }
-        return s;
-    }
-
-    private static String atribStrNoVacio(String s, String atrib) {
-        if(s == null || s.isEmpty()) {
-            throw argInv(
-                String.format(
-                    "El atributo %s no puede ser vacio o nulo", atrib
-                )
-            );
-        }
-        return s;
-    }
 
     protected final String numeroDeCliente;
     protected String nombre;
@@ -47,10 +25,10 @@ class ClienteDavila {
         LocalDate fechaDeNacimiento
     ) {  
         numeroDeCliente = generarNumeroDeCliente();
-        this.nombre = atribStrNoVacio(nombre, "nombre");
+        this.nombre = atribNoVacio(nombre, "nombre");
         this.correoElectronico = validarCorreoElectronico(correoElectronico);
         this.numeroDeTelefono = validarNumeroDeTelefono(numeroDeTelefono);
-        this.direccion = atribStrNoNulo(direccion, "direccion");
+        this.direccion = atribNoNulo(direccion, "direccion");
         this.fechaDeNacimiento = validarFechaDeNacimiento(fechaDeNacimiento);
         cuentas = new ArrayList<>();
     }   
@@ -73,14 +51,14 @@ class ClienteDavila {
 
     public String getNombre() {return nombre;}
     public void setNombre(String nom) {
-        nombre = atribStrNoVacio(nom, "nombre");
+        nombre = atribNoVacio(nom, "nombre");
     }
 
 
     public String getCorreoElectronico() {return correoElectronico;}
     private static Pattern patronCorreo = Pattern.compile("^(\\w+)@(\\w+\\.\\w+)$");
     private static String validarCorreoElectronico(String s) {
-        s = atribStrNoVacio(s, "correoElectronico");
+        s = atribNoVacio(s, "correoElectronico");
         Matcher m = patronCorreo.matcher(s);
         if(!m.matches()) {
             throw argInv("formato incorrecto");
@@ -106,7 +84,7 @@ class ClienteDavila {
 
     public String getNumeroDeTelefono() {return numeroDeTelefono;}
     private static String validarNumeroDeTelefono(String s) {
-        s = atribStrNoVacio(s, "numeroDeTelefono");
+        s = atribNoVacio(s, "numeroDeTelefono");
         if(s.length() < 10 || s.length() > 20) {
             throw argInv(
                 "numeroDeTelefono debe tener entre 10 y 20 caracteres"

@@ -28,7 +28,3 @@ tasks.test {
         events("passed", "skipped", "failed")
     }
 }
-
-application {
-    mainClass.set("Main")
-}

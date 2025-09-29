@@ -1,7 +1,7 @@
 
 import java.util.function.Function;
 
-import util.FmtIO;
+import static util.FmtIO.*;
 
 class Main {
     
@@ -39,28 +39,28 @@ class Main {
     public Main() {this(true);}
 
     private void agregarEstudiante() {
-        FmtIO.clear();
-        FmtIO.println("Ingrese los datos de registro");
+        clear();
+        println("Ingrese los datos de registro");
 
-        FmtIO.setPrompt("Nombre: ");
-        var nombre = FmtIO.getLine();
+        setPrompt("Nombre: ");
+        var nombre = getLine();
 
-        FmtIO.setPrompt("Carrera: ");
-        var carrera = FmtIO.getLine();
+        setPrompt("Carrera: ");
+        var carrera = getLine();
 
-        FmtIO.setPrompt("Edad: ");
-        var edad = FmtIO.getInt(8, 120);
+        setPrompt("Edad: ");
+        var edad = getInt(8, 120);
 
         uni.agregarEstudiante(new EstudianteAD(nombre, carrera, edad));
-        FmtIO.println("Estudiante Agregado Exitosamente");
-        FmtIO.setPrompt("...");
-        FmtIO.getLine();
-        FmtIO.setPrompt("> ");
+        println("Estudiante Agregado Exitosamente");
+        setPrompt("...");
+        getLine();
+        setPrompt("> ");
     }
 
     private void buscarEstudiantes() {
-        FmtIO.clear();
-        FmtIO.println(
+        clear();
+        println(
             "Seleccine el criterio de busqueda",
             "1. Por nombre",
             "2. Por matricula",
@@ -68,14 +68,14 @@ class Main {
             "4. Por semestre",
             "5. Por edad"
         );
-        int op = FmtIO.getInt(1,5);
+        int op = getInt(1,5);
 
-        FmtIO.println("Ingrese el valor de la busqueda");
+        println("Ingrese el valor de la busqueda");
         Object val;
         if(op == 2 || op == 4 ||op == 5) {
-            val = FmtIO.getInt();
+            val = getInt();
         } else {
-            val = FmtIO.getLine();
+            val = getLine();
         }
 
         Function<EstudianteAD,Object> f = switch(op) {
@@ -88,24 +88,24 @@ class Main {
         };
 
         var lista = uni.buscarEstudiantes(val, f);
-        FmtIO.println("Se encontraron los siguientes resultados:\n");
+        println("Se encontraron los siguientes resultados:\n");
         Universidad4122.mostrarEstudiantes(lista);
-        FmtIO.getLine();
+        getLine();
     }
 
     private void mostrarEstudiantes() {
-        FmtIO.clear();
+        clear();
         System.out.println("Mostrando todos los estudiantes incritos\n");
         uni.mostrarEstudiantes();
-        FmtIO.getLine();
+        getLine();
     }
 
     private void run() {
 
         var corriendo = true;
         while(corriendo) {
-            FmtIO.clear();
-            FmtIO.println(
+            clear();
+            println(
                 "Sistema Generico de Gestion de Estudiantes",
                 "1. Agregar Estudiante",
                 "2. Buscar Estudiantes",
@@ -113,7 +113,7 @@ class Main {
                 "4. Salir"
             );
             
-            switch(FmtIO.getIntOpt()) {
+            switch(getIntOpt()) {
                 case 1:
                     agregarEstudiante();
                     break;

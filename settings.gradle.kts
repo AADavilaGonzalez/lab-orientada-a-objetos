@@ -11,5 +11,7 @@ include(
     ":practica1",
     ":practica2", 
     ":practica3",
+    ":practica4",
+    ":practica5",
     ":utils"
 )
