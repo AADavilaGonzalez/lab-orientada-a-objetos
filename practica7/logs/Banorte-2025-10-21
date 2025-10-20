@@ -1,28 +1,28 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE log SYSTEM "logger.dtd">
-<log>
-<record>
-  <date>2025-10-20T08:24:20.130066764Z</date>
-  <millis>1760948660130</millis>
-  <nanos>66764</nanos>
-  <sequence>96</sequence>
-  <logger>Banorte</logger>
-  <level>INFO</level>
-  <class>banco.SistemaBancoAD</class>
-  <method>simularOperaciones</method>
-  <thread>1</thread>
-  <message>Enlistando errores de las transaccionesefectuadas el dia 2025-10-21 en el banco Banorte</message>
-</record>
-<record>
-  <date>2025-10-20T08:24:20.130426628Z</date>
-  <millis>1760948660130</millis>
-  <nanos>426628</nanos>
-  <sequence>97</sequence>
-  <logger>Banorte</logger>
-  <level>INFO</level>
-  <class>banco.SistemaBancoAD</class>
-  <method>simularOperaciones</method>
-  <thread>1</thread>
-  <message>ERROR: usuario con matricula 13 no encontrado</message>
-</record>
-</log>
+Oct 20, 2025 2:29:09 AM banco.SistemaBancoAD simularOperaciones
+INFO: Enlistando errores de las transaccionesefectuadas el dia 2025-10-21 en el banco Banorte
+Oct 20, 2025 2:29:09 AM banco.SistemaBancoAD simularOperaciones
+INFO: ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: 0
+Oct 20, 2025 2:29:09 AM banco.SistemaBancoAD simularOperaciones
+INFO: ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -1
+Oct 20, 2025 2:29:09 AM banco.SistemaBancoAD simularOperaciones
+INFO: ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: 0
+Oct 20, 2025 2:29:09 AM banco.SistemaBancoAD simularOperaciones
+INFO: ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: 0
+Oct 20, 2025 2:29:09 AM banco.SistemaBancoAD simularOperaciones
+INFO: ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: 0
+Oct 20, 2025 2:29:09 AM banco.SistemaBancoAD simularOperaciones
+INFO: ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: 0
+Oct 20, 2025 2:29:09 AM banco.SistemaBancoAD simularOperaciones
+INFO: ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -1
+Oct 20, 2025 2:29:09 AM banco.SistemaBancoAD simularOperaciones
+INFO: ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -1
+Oct 20, 2025 2:29:09 AM banco.SistemaBancoAD simularOperaciones
+INFO: ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -1
+Oct 20, 2025 2:29:09 AM banco.SistemaBancoAD simularOperaciones
+INFO: ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -1
+Oct 20, 2025 2:29:09 AM banco.SistemaBancoAD simularOperaciones
+INFO: ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: 0
+Oct 20, 2025 2:29:09 AM banco.SistemaBancoAD simularOperaciones
+INFO: ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: 0
+Oct 20, 2025 2:29:09 AM banco.SistemaBancoAD simularOperaciones
+INFO: ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: 0
