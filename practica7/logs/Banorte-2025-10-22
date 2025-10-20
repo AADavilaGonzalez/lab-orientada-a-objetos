@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2025-10-20T08:24:20.131039337Z</date>
+  <millis>1760948660131</millis>
+  <nanos>39337</nanos>
+  <sequence>98</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>Enlistando errores de las transaccionesefectuadas el dia 2025-10-22 en el banco Banorte</message>
+</record>
+</log>

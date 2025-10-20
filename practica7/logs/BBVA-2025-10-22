@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2025-10-20T08:24:20.122816191Z</date>
+  <millis>1760948660122</millis>
+  <nanos>816191</nanos>
+  <sequence>63</sequence>
+  <logger>BBVA</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>Enlistando errores de las transaccionesefectuadas el dia 2025-10-22 en el banco BBVA</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.123134919Z</date>
+  <millis>1760948660123</millis>
+  <nanos>134919</nanos>
+  <sequence>64</sequence>
+  <logger>BBVA</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -16</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.123300805Z</date>
+  <millis>1760948660123</millis>
+  <nanos>300805</nanos>
+  <sequence>65</sequence>
+  <logger>BBVA</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -6</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.123455259Z</date>
+  <millis>1760948660123</millis>
+  <nanos>455259</nanos>
+  <sequence>66</sequence>
+  <logger>BBVA</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: usuario con matricula 22 no encontrado</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.123614994Z</date>
+  <millis>1760948660123</millis>
+  <nanos>614994</nanos>
+  <sequence>67</sequence>
+  <logger>BBVA</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: usuario con matricula 29 no encontrado</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.123746696Z</date>
+  <millis>1760948660123</millis>
+  <nanos>746696</nanos>
+  <sequence>68</sequence>
+  <logger>BBVA</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -14</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.123880513Z</date>
+  <millis>1760948660123</millis>
+  <nanos>880513</nanos>
+  <sequence>69</sequence>
+  <logger>BBVA</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -17</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.124004171Z</date>
+  <millis>1760948660124</millis>
+  <nanos>4171</nanos>
+  <sequence>70</sequence>
+  <logger>BBVA</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: usuario con matricula 34 no encontrado</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.124145852Z</date>
+  <millis>1760948660124</millis>
+  <nanos>145852</nanos>
+  <sequence>71</sequence>
+  <logger>BBVA</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: usuario con matricula 22 no encontrado</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.124297662Z</date>
+  <millis>1760948660124</millis>
+  <nanos>297662</nanos>
+  <sequence>72</sequence>
+  <logger>BBVA</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: usuario con matricula 31 no encontrado</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.124431338Z</date>
+  <millis>1760948660124</millis>
+  <nanos>431338</nanos>
+  <sequence>73</sequence>
+  <logger>BBVA</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -6</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.124587496Z</date>
+  <millis>1760948660124</millis>
+  <nanos>587496</nanos>
+  <sequence>74</sequence>
+  <logger>BBVA</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: usuario con matricula 21 no encontrado</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.124709351Z</date>
+  <millis>1760948660124</millis>
+  <nanos>709351</nanos>
+  <sequence>75</sequence>
+  <logger>BBVA</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -16</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.124830714Z</date>
+  <millis>1760948660124</millis>
+  <nanos>830714</nanos>
+  <sequence>76</sequence>
+  <logger>BBVA</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: usuario con matricula 28 no encontrado</message>
+</record>
+</log>

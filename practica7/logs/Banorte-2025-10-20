@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2025-10-20T08:24:20.126487568Z</date>
+  <millis>1760948660126</millis>
+  <nanos>487568</nanos>
+  <sequence>77</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>Enlistando errores de las transaccionesefectuadas el dia 2025-10-20 en el banco Banorte</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.126759759Z</date>
+  <millis>1760948660126</millis>
+  <nanos>759759</nanos>
+  <sequence>78</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -3</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.126926747Z</date>
+  <millis>1760948660126</millis>
+  <nanos>926747</nanos>
+  <sequence>79</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -10</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.127143998Z</date>
+  <millis>1760948660127</millis>
+  <nanos>143998</nanos>
+  <sequence>80</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -7</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.127287292Z</date>
+  <millis>1760948660127</millis>
+  <nanos>287292</nanos>
+  <sequence>81</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: usuario con matricula 12 no encontrado</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.127460310Z</date>
+  <millis>1760948660127</millis>
+  <nanos>460310</nanos>
+  <sequence>82</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: usuario con matricula 18 no encontrado</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.127620536Z</date>
+  <millis>1760948660127</millis>
+  <nanos>620536</nanos>
+  <sequence>83</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: usuario con matricula 14 no encontrado</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.127748852Z</date>
+  <millis>1760948660127</millis>
+  <nanos>748852</nanos>
+  <sequence>84</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -8</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.127875015Z</date>
+  <millis>1760948660127</millis>
+  <nanos>875015</nanos>
+  <sequence>85</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -8</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.128008250Z</date>
+  <millis>1760948660128</millis>
+  <nanos>8250</nanos>
+  <sequence>86</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -5</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.128144992Z</date>
+  <millis>1760948660128</millis>
+  <nanos>144992</nanos>
+  <sequence>87</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -3</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.128290250Z</date>
+  <millis>1760948660128</millis>
+  <nanos>290250</nanos>
+  <sequence>88</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -10</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.128463570Z</date>
+  <millis>1760948660128</millis>
+  <nanos>463570</nanos>
+  <sequence>89</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: usuario con matricula 15 no encontrado</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.128622462Z</date>
+  <millis>1760948660128</millis>
+  <nanos>622462</nanos>
+  <sequence>90</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -2</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.128797545Z</date>
+  <millis>1760948660128</millis>
+  <nanos>797545</nanos>
+  <sequence>91</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -8</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.128947171Z</date>
+  <millis>1760948660128</millis>
+  <nanos>947171</nanos>
+  <sequence>92</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -3</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.129091116Z</date>
+  <millis>1760948660129</millis>
+  <nanos>91116</nanos>
+  <sequence>93</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: 0</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.129234841Z</date>
+  <millis>1760948660129</millis>
+  <nanos>234841</nanos>
+  <sequence>94</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -5</message>
+</record>
+<record>
+  <date>2025-10-20T08:24:20.129394796Z</date>
+  <millis>1760948660129</millis>
+  <nanos>394796</nanos>
+  <sequence>95</sequence>
+  <logger>Banorte</logger>
+  <level>INFO</level>
+  <class>banco.SistemaBancoAD</class>
+  <method>simularOperaciones</method>
+  <thread>1</thread>
+  <message>ERROR: Intentando efectuar operaciones sobre unnumero de matricula invalido: -6</message>
+</record>
+</log>
