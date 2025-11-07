@@ -6,7 +6,7 @@ if [[ -z "$proyecto" ]]; then
     exit 1
 fi
 
-proyectos="practica1 practica2 practica4 practica5 practica6"
+proyectos="practica1 practica2 practica4 practica5 practica6 practica8"
 if [[ ! " $proyectos " =~ $proyecto ]]; then
     echo "No se puede ejecutar $proyecto como aplicacion interactiva"
     echo "Opciones: $proyectos"
