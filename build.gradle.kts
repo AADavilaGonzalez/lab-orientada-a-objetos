@@ -1,4 +1,8 @@
 subprojects {
     apply(plugin = "java")
     apply(plugin = "eclipse")
+
+    repositories {
+        mavenCentral()
+    }
 }

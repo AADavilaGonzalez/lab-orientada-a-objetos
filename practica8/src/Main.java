@@ -55,7 +55,7 @@ class App {
     }
 
     public void run() {
-        while(this.corriendo) { this.mostrarMenu(); }
+        while(this.corriendo) { mostrarMenu(); }
     }
 
     public void mostrarMenu() {
