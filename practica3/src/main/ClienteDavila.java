@@ -25,10 +25,10 @@ class ClienteDavila {
         LocalDate fechaDeNacimiento
     ) {  
         numeroDeCliente = generarNumeroDeCliente();
-        this.nombre = atribNoVacio(nombre, "nombre");
+        this.nombre = argNoVacio(nombre, "nombre");
         this.correoElectronico = validarCorreoElectronico(correoElectronico);
         this.numeroDeTelefono = validarNumeroDeTelefono(numeroDeTelefono);
-        this.direccion = atribNoNulo(direccion, "direccion");
+        this.direccion = argNoNulo(direccion, "direccion");
         this.fechaDeNacimiento = validarFechaDeNacimiento(fechaDeNacimiento);
         cuentas = new ArrayList<>();
     }   
@@ -51,14 +51,14 @@ class ClienteDavila {
 
     public String getNombre() {return nombre;}
     public void setNombre(String nom) {
-        nombre = atribNoVacio(nom, "nombre");
+        nombre = argNoVacio(nom, "nombre");
     }
 
 
     public String getCorreoElectronico() {return correoElectronico;}
     private static Pattern patronCorreo = Pattern.compile("^(\\w+)@(\\w+\\.\\w+)$");
     private static String validarCorreoElectronico(String s) {
-        s = atribNoVacio(s, "correoElectronico");
+        s = argNoVacio(s, "correoElectronico");
         Matcher m = patronCorreo.matcher(s);
         if(!m.matches()) {
             throw argInv("formato incorrecto");
@@ -84,7 +84,7 @@ class ClienteDavila {
 
     public String getNumeroDeTelefono() {return numeroDeTelefono;}
     private static String validarNumeroDeTelefono(String s) {
-        s = atribNoVacio(s, "numeroDeTelefono");
+        s = argNoVacio(s, "numeroDeTelefono");
         if(s.length() < 10 || s.length() > 20) {
             throw argInv(
                 "numeroDeTelefono debe tener entre 10 y 20 caracteres"

@@ -57,7 +57,7 @@ class EditorCSVPersonas {
 
         prompt();
         var op = scanInt();
-        if(op == null || op < 1 || op > 3) {
+        if(op == null || op < 1 || op > 4) {
             clear();
             return;
         }

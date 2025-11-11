@@ -5,7 +5,7 @@ import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 
 public class Boton28Estilizado extends Button {
-    
+
     private static String claseCSS = "boton-estilizado";
 
     public Boton28Estilizado(

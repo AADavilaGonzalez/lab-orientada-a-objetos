@@ -1,6 +1,6 @@
 plugins {
     id("application")
-    id("org.openjfx.javafxplugin").version("0.1.0")
+    id("org.openjfx.javafxplugin") version "0.1.0"
 }
 
 javafx{
@@ -11,7 +11,7 @@ javafx{
 sourceSets {
     main {
         java {
-            setSrcDirs(listOf("src"))
+            setSrcDirs(listOf("src/main"))
         }
         resources {
             srcDirs(listOf("src/recursos_davila"))

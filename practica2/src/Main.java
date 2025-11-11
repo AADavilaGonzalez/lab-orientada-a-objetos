@@ -113,7 +113,7 @@ class Main {
                 "4. Salir"
             );
             
-            switch(getIntOpt()) {
+            switch(scanInt()) {
                 case 1:
                     agregarEstudiante();
                     break;

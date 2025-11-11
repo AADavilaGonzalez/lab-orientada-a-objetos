@@ -15,8 +15,8 @@ public abstract class VehiculoBaseA {
         double precioBase,
         int kilometraje
     ) {
-        this.marca = atribNoVacio(marca, "marca");
-        this.modelo = atribNoVacio(modelo, "modelo");
+        this.marca = argNoVacio(marca, "marca");
+        this.modelo = argNoVacio(modelo, "modelo");
         this.precioBase = validarPrecioBase(precioBase);
         this.kilometraje = validarKilometraje(kilometraje);
     }

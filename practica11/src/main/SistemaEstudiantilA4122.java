@@ -9,7 +9,6 @@
  * Manual de usuario
  */
 
-
 import java.util.Arrays;
 
 import javafx.application.Application;
@@ -21,7 +20,6 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.control.TableView;
@@ -33,6 +31,7 @@ public class SistemaEstudiantilA4122 extends Application {
 
     @Override
     public void start(Stage escenarioPrincipal) {
+
         //Colleccion de datos de los estudiantes 
         ObservableList<Estudiante> datos = FXCollections.observableArrayList();
 
@@ -95,13 +94,9 @@ public class SistemaEstudiantilA4122 extends Application {
         GridPane.setHalignment(formulario, HPos.CENTER);
 
         var botonCrear = new Boton28Estilizado("Crear", (e) -> {
-            System.out.println("Entramos al handler de crear");
             String nombre = campoNombre.getValue();
             Integer edad = campoEdad.getValue();
             Double promedio = campoPromedio.getValue();
-            System.out.println(nombre);
-            System.out.println(edad);
-            System.out.println(promedio);
 
             if (nombre != null && edad != null && promedio != null) {
                 datos.add(new Estudiante(nombre, edad, promedio));
@@ -126,9 +121,16 @@ public class SistemaEstudiantilA4122 extends Application {
             }
         });
 
-        HBox botones = new HBox(10, botonCrear, botonActualizar);
-        formulario.getChildren().add(botones);
+        var botonEliminar = new Boton28Estilizado("Eliminar", (e) -> {
+            Estudiante seleccionado = tabla.getSelectionModel().getSelectedItem();
+            if (seleccionado != null) {
+                datos.remove(seleccionado);
+                tabla.refresh();
+            }
+        });
 
+        VBox botones = new VBox(10, botonCrear, botonActualizar, botonEliminar);
+        formulario.getChildren().add(botones);
 
         //Handler de seleccion de la tabla
         tabla.getSelectionModel().selectedItemProperty().addListener(
@@ -147,6 +149,9 @@ public class SistemaEstudiantilA4122 extends Application {
         //Agregar todo a la cuadriculo y poner la cuadricula como escena
         cuadricula.getChildren().addAll(formulario, tabla);
         Scene escena = new Scene(cuadricula, 640, 480);
+        escena.getStylesheets().add(
+            getClass().getResource("/estilos_1994122.css").toExternalForm()
+        );
 
         escenarioPrincipal.setTitle("Sistema Estudiantil");
         escenarioPrincipal.setScene(escena);
@@ -154,10 +159,3 @@ public class SistemaEstudiantilA4122 extends Application {
     }
 }
 
-class Main {
-    public static void main(String[] args) {
-        Application.launch(
-            SistemaEstudiantilA4122.class, args
-        );
-    }
-}
