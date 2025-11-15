@@ -6,12 +6,18 @@ if [[ -z "$proyecto" ]]; then
     exit 1
 fi
 
+# Caso especial PIA
+if [[ "pia" == "$proyecto" ]]; then
+    (cd ./pia; mvn compile exec:java) || return 1
+fi
+
 proyectos="practica1 practica2 practica4 practica5 practica6 practica8 practica9 practica10 practica11"
 if [[ ! " $proyectos " =~ $proyecto ]]; then
     echo "No se puede ejecutar $proyecto como aplicacion interactiva"
     echo "Opciones: $proyectos"
     exit 1
 fi
+
 
 ./gradlew ":$proyecto:installDist" &> /dev/null || exit 1
 ejecutable="./$proyecto/build/install/$proyecto/bin/$proyecto"
