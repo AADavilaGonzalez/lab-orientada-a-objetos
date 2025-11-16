@@ -17,6 +17,9 @@ base a su sistema operativo:
 * Linux o MacOS -> gradlew
 * Windows -> gradlew.bat
 
+Para generar el script y sus dependencias utilice el comando
+`gradle wrapper` en el root del proyecto con gradle instalado
+
 Para crear una distribucion ejectuable de un proyeto utilice:
 `./gradlew :'proyecto':installDist`
 ej. `./gradle :practica1:installDist`

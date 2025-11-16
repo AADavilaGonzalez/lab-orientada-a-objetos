@@ -36,5 +36,9 @@ replay_pid*
 build
 
 #PIA Maven
-/target/
+/pia/target/ 
 *reporte*
+
+#Archivos designorados a proposito
+!/practica11/practica11.jar
+!/pia/GymPOS.jar
